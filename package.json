@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "process": "^0.11.10"
+  },
+  "name": "the-food-express",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npx parcel index.html",
+    "build": "npx parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parthpatel21/the-food-express.git"
+  },
+  "author": "parthpatel21",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/parthpatel21/the-food-express/issues"
+  },
+  "homepage": "https://github.com/parthpatel21/the-food-express#readme",
+  "description": ""
+}
