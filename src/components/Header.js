@@ -1,12 +1,13 @@
 import React from "react";
+import { IMG_LOGO_URL } from './../config';
 
-const HeaderComponent = () => {
+const Header = () => {
   return (
     <div className="header">
       <a href="/">
         <img
           className="logo"
-          src="https://dcassetcdn.com/design_img/6165/17990/17990_139608_6165_image.jpg"
+          src={IMG_LOGO_URL}
         />
       </a>
 
@@ -26,4 +27,4 @@ const HeaderComponent = () => {
   );
 };
 
-export default HeaderComponent;
+export default Header;

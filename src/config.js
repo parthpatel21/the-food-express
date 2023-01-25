@@ -1,27 +1,6 @@
-import React from "react";
-
-const RestaurantCard = ({
-  name,
-  cloudinaryImageId,
-  cuisines,
-  lastMileTravelString,
-}) => {
-  return (
-    <div className="card">
-      <img
-        src={
-          "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" +
-          cloudinaryImageId
-        }
-      />
-      <h2>{name}</h2>
-      <h3>{cuisines.join(", ")}</h3>
-      <h4>{lastMileTravelString}</h4>
-    </div>
-  );
-};
-
-const restaurantList = [
+export const IMG_CDN_URL =
+  "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/";
+export const restaurantList = [
   {
     type: "restaurant",
     data: {
@@ -1814,14 +1793,6 @@ const restaurantList = [
     subtype: "basic",
   },
 ];
-const BodyComponent = () => {
-  return (
-    <div className="restaurant-list">
-      {restaurantList.map(({ data }) => (
-        <RestaurantCard {...data} key={data?.uuid} />
-      ))}
-    </div>
-  );
-};
 
-export default BodyComponent;
+export const IMG_LOGO_URL =
+  "https://dcassetcdn.com/design_img/6165/17990/17990_139608_6165_image.jpg";
