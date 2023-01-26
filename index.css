@@ -42,6 +42,16 @@
   width: 250px;
 }
 
+.shimmer-card {
+  height: 200;
+  padding: 20px 20px 57px;
+  margin: 10;
+  border: 1px solid #fff;
+  background-color: #d3d5df;
+  contain: content;
+  width: 250px;
+}
+
 .card > img {
   width: 100%;
 }
