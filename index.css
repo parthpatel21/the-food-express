@@ -42,6 +42,10 @@
   width: 250px;
 }
 
+.menu {
+  display: flex;
+}
+
 .shimmer-card {
   height: 200;
   padding: 20px 20px 57px;

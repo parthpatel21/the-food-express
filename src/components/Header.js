@@ -1,20 +1,29 @@
 import React, { useState } from "react";
-import { IMG_LOGO_URL } from "./../config";
+import { Link } from "react-router-dom";
+import Logo from "../assets/img/logo.jpg";
 
 const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
     <div className="header">
-      <a href="/">
-        <img className="logo" src={IMG_LOGO_URL} />
-      </a>
+      <Link to="/">
+        <img className="logo" src={Logo} />
+      </Link>
 
       <div className="nav-items">
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
-          <li>Cart</li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+          <li>
+            <Link to="/cart">Cart</Link>
+          </li>
         </ul>
       </div>
 

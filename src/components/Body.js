@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 
@@ -58,7 +59,9 @@ const Body = () => {
       <div className="restaurant-list">
         {restaurantList.length
           ? restaurantList.map(({ data }) => (
-              <RestaurantCard {...data} key={data?.uuid} />
+              <Link to={`/restaurant/${data.id}`} key={data?.uuid}>
+                <RestaurantCard {...data} />
+              </Link>
             ))
           : "No Restaurant Found"}
       </div>
