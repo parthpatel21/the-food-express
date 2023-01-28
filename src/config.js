@@ -1794,5 +1794,8 @@ export const restaurantList = [
   },
 ];
 
+export const RESTAURANT_DETAIL_URL =
+  "https://www.swiggy.com/dapi/menu/v4/full?lat=19.0759837&lng=72.8776559&menuId=";
+
 export const IMG_LOGO_URL =
   "https://dcassetcdn.com/design_img/6165/17990/17990_139608_6165_image.jpg";

@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import useOnline from "../hooks/useOnline";
+import { filterRestaurantCard } from "../utils/helper";
 import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 
@@ -26,12 +28,6 @@ const Body = () => {
     setAllRestaurantList(list);
   };
 
-  const filterRestaurantCard = () => {
-    return allRestaurantList.filter((restaurant) =>
-      restaurant.data.name.toLocaleLowerCase().includes(searchValue)
-    );
-  };
-
   if (!allRestaurantList.length) {
     return <Shimmer />;
   }
@@ -49,7 +45,10 @@ const Body = () => {
         <button
           className="search-btn"
           onClick={() => {
-            const filteredRestaurantList = filterRestaurantCard(searchValue);
+            const filteredRestaurantList = filterRestaurantCard(
+              searchValue,
+              allRestaurantList
+            );
             setRestaurantList(filteredRestaurantList);
           }}
         >
